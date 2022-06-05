@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/tutorials
+Content-Type: application/json
+
+{
+  "title" : "Title 3",
+  "description" : "Desc 3"
+}
+
+###
+GET http://localhost:8080/api/tutorials/629c5e62281bfc1a17b475c6
+
+###
+PUT http://localhost:8080/api/tutorials/629c608a281bfc1a17b475c7
+Content-Type: application/json
+
+{
+  "title" : "New title abcd",
+  "description" : "new Desc abcd",
+  "published": true
+}
+
+###
+GET http://localhost:8080/api/tutorials
+
+###
+GET http://localhost:8080/api/tutorials/published
+
+###
+DELETE http://localhost:8080/api/tutorials/629c610d281bfc1a17b475c8
+
+###
+DELETE http://localhost:8080/api/tutorials
